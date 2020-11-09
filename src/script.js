@@ -65,7 +65,7 @@ async function getMoreSongs(url) {
 form.addEventListener('submit', e => {
     e.preventDefault()
 
-    const searchTerm = search.nodeValue.trim()
+    const searchTerm = search.value.trim()
 
     if(!searchTerm) {
         alert('Please type in a seach term')
