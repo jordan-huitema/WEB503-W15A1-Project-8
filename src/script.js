@@ -51,6 +51,8 @@ function showData(data) {
 // Get prev and next songs for our ul 
 async function getMoreSongs(url) { // url is either the prev or next  and it's going to be async 
   const res = await fetch(`https://cors-anywhere.herokuapp.com/${url}`); // using cors anywhere from herokuapp to use cross domain 
+  console.log(res)
+  console.log(res.json())
   const data = await res.json();
 
   showData(data);
